@@ -1,0 +1,121 @@
+//normalize and base styles for html, body, a, ul, li, headers, paragraphs, uls, ols, blockquotes, pre, etc.
+// Resets
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  //This defines what 1 rem is
+  //font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+  font-size: 100px;
+
+  //@include respond(tab-land) {
+  //  font-size: 62.5%; //1rem = 10px
+  //}
+  //
+  //@include respond(tab-land) {
+  //  font-size: 75%; //1rem = 12px
+  //}
+  //
+  //@include respond(widescreen) {
+  //  font-size: 87.5%; //1rem = 14px
+  //}
+  //@include respond(widescreen) {
+  //  font-size: 100%; //1rem = 16px
+  //}
+}
+@import "../vendor/normalize.scss/normalize";
+// base overrides
+body {
+  background-position: 50%;
+  background-size: 105%;
+  font-family: $body-font-family;
+  font-size: 0.16rem;
+  color: $body-text-color;
+}
+
+//all images responsive by default
+img {
+  max-width: 100%;
+  width: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headline-font-family;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+// h2 {
+//     font-size: 2rem;
+//     &.article__headline {
+//         text-align: center;
+//     }
+// }
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 3.4rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: .875rem;
+}
+
+h6 {
+  font-size: .75rem;
+}
+
+a {
+  &:active,
+  &:visited,
+  &:link {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+p {
+  a {
+    &:active,
+    &:visited,
+    &:link {
+      text-decoration: underline;
+    }
+  }
+  line-height: 2.5rem;
+}
+
+.underlink {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+svg path {
+  pointer-events: none;
+}

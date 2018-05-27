@@ -1,0 +1,6 @@
+
+$widthPage:375;
+
+@function px($px) {
+  @return $px/ $widthPage * 3.75 + rem;
+}
