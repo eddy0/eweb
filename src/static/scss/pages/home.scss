@@ -1,6 +1,9 @@
 header {
-
+  z-index: 100;
+  position: relative;
+  background-color: #fff;
   .header-search {
+
     padding: px(10) px(20);
     display: flex;
     align-items: center;
@@ -62,6 +65,7 @@ header {
 
 
 header .nav {
+
   height: px(30);
   display: flex;
   padding-left: px(15);
@@ -94,7 +98,7 @@ header .nav {
 
 }
 
-header .policy-list {
+.policy-list {
   padding: px(10);
   display: flex;
   align-items: center;
@@ -112,8 +116,116 @@ header .policy-list {
 .supply {
   padding: px(15) 0;
 
+
   .supply-title {
     text-align: center;
   }
+
+  .supply-wrapper{
+    position: relative;
+    padding: 5px ;
+
+    .supply-list {
+      display: flex;
+      flex-wrap: wrap;
+
+      align-items: center;
+      justify-content: space-between;
+    }
+
+
+    .supply-item {
+      width: calc(50% - 5px );
+      background-color: #f6f6f6;
+      margin: 5px 0;
+      position: relative;
+
+      & img {
+        vertical-align: top;
+      }
+    }
+
+
+    .detail {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      font-size: px(14);
+      color: #333;
+
+      & .title, & .price {
+         margin-bottom: px(5);
+
+       }
+    }
+  }
 }
+
+
+.color-pannel{
+  background: url("https://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/bitmap-d4f7b37e32.png") no-repeat;
+  height: px(130);
+  position: relative;
+  margin-bottom: 10px;
+
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .title {
+    font-size: px(20);
+    margin-bottom: px(10);
+    text-align: center;
+  }
+
+  .more {
+    background-color: rgb(216, 229, 241);
+    font-size: px(15);
+    line-height: px(30);
+    text-align: center;
+    padding: 3px px(20);
+  }
+
+}
+
+.color-pannel:after{
+  content: '';
+  border: 15px solid;
+  border-color: transparent transparent #fff;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.goods-list {
+  height: px(230);
+  font-size: px(12);
+  display: flex;
+
+  .goods-item {
+    margin: 5px;
+  }
+
+  .goods-img {
+    width: px(127);
+    height: px(127);
+    background-color: #f6f6f6;
+  }
+
+  .description {
+    color: #7f7f7f;
+  }
+
+  .price{
+    color: red;
+  }
+
+}
+
+
+
 

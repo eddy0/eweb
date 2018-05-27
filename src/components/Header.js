@@ -5,20 +5,25 @@ import Nav from './Nav'
 import ImageSwiper from './Slider'
 import Policy from './Policy'
 import SupplyDirect from "./SupplyDirect";
+import NewPublish from './NewPublish'
 
 class Header extends React.Component {
     render() {
         return (
+            <div>
             <header>
                 <div className='header-search'>
                     <Logo  />
                     <SearchBar />
                 </div>
                 <Nav/>
-                <ImageSwiper/>
+            </header>
+
+            <ImageSwiper/>
                 <Policy/>
                 <SupplyDirect/>
-            </header>
+                <NewPublish/>
+            </div>
         )
     }
 }

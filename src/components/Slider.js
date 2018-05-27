@@ -27,9 +27,9 @@ class ImageSwiper extends React.Component {
 
 
         return (
-            <div>
+            <div style={{overflow: 'hidden'}}>
                 <Slider {...settings}>
-                    <div>
+                    <div >
                         <img src="https://yanxuan.nosdn.127.net/432e9722ae63c5a2136c6454febaa567.jpg?imageView&thumbnail=750x0&quality=75" alt=""/>
                     </div>
                     <div>
